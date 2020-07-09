@@ -1,0 +1,10 @@
+.vscode
+blog_HM
+__pycache__
+.idea
+
+**/migrations/*
+!**/migrations/__init__.py
+
+*.sqlite3
+*py[cod]

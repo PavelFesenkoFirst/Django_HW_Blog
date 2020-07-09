@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block main %}
+    <div class="container">
+
+        <div class="row">
+            {% for rubric in rubric_list %}
+            <div class="col-md-4">
+                <a href="{{ rubric.get_absolute_url }}" >{{ rubric.title|title }}</a>
+                <p>
+                    {{ rubric.content }}
+                </p>
+                <p>
+                    <a class="btn btn-secondary" href="{{ rubric.get_absolute_url }}">Подробней</a>
+                </p>
+            </div>
+            {% endfor %}
+
+
+
+        </div>
+
+    </div>
+{% endblock main %}
